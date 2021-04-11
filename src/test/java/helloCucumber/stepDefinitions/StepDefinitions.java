@@ -35,4 +35,9 @@ public class StepDefinitions {
     public void today_is_Friday() {
         today = "Friday";
     }
+
+    @Given("today is {string}")
+    public void todayIs(String today) {
+        this.today = today;
+    }
 }
